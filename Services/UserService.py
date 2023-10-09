@@ -1,9 +1,11 @@
+import logging
 from Models.UserModel import UserModel
 from flask import jsonify, session 
 from Database.db import db
-from GlobalExceptions.ServiceException import ServiceException
+from GlobalExceptions.ServiceException import UsernameError, PasswordError, ServiceException
 from sqlalchemy.exc import IntegrityError, OperationalError
 import warnings
+
 class UserService:
     def login(username, password):
         try:
@@ -25,21 +27,26 @@ class UserService:
         session.clear()  # Clear all session data
         return jsonify({"message": "Logged out successfully!"})
     
-    def create_user(username, password, role):
+    def create_user(username, password, role):  # assuming this is within a class
         try:
-            validated_username = UserService.check_username(username)
-            validated_pass = UserService.check_password(password)
-            
-            new_user = UserModel(username=validated_username, password=validated_pass, role=role)
+            UserService.check_username(username)
+        # Assuming there's a similar method for password:
+            UserService.check_password(password)
+        
+            new_user = UserModel(username=username, password=password, role=role)
             db.session.add(new_user)
             db.session.commit()
-            
-            return jsonify({'User Created': new_user.json()})
-        except Exception as e:
-            print(f"Could not add this user: {username} to the database", e)
-            db.session.rollback()
-            return jsonify({"error": "Unable to create user"}), 500
         
+            return True
+        except (UsernameError, PasswordError) as e:
+            logging.error(e)
+            db.session.rollback()
+            raise
+        except Exception as e:
+            logging.error(f"Could not add user: {username} to the database due to {str(e)}")
+            db.session.rollback()
+            raise
+      
     def update_user(id, updatedUsername, updatedPass, updatedEmail, updatedRole):
         try:
         # Fetch the user by ID
@@ -116,35 +123,31 @@ class UserService:
         return filteredVariable
     
     def check_username(username):
-        try:
-            if len(username) <= 5 or len(username) > 12:
-                raise ValueError("Error with length of username") 
-            has_upper = any(letter.isupper() for letter in username)
-            has_lower = any(letter.islower() for letter in username)
-            if not(has_upper and has_lower): 
-                raise ValueError("Issue here with casing")
-            return username
-        except ValueError as e:
-            print(e)
-            raise
+        if len(username) <= 5 or len(username) > 12:
+            raise UsernameError("Error with length of username") 
+
+        has_upper = any(letter.isupper() for letter in username)
+        has_lower = any(letter.islower() for letter in username)
+        if not(has_upper and has_lower):
+            raise UsernameError("Username does not have an upper and lower case letter")
+        return True
+      
 
     def check_password(password):
-        try:
-            SPECIAL_CHARACTERS = "!@#$%^&*"
-            if len(password) <= 5 or len(password) > 16:
-                raise ValueError('Length Issue')
-            has_upper = any(letter.isupper() for letter in password)
-            has_lower = any(letter.islower() for letter in password)
-            if not (has_upper and has_lower):
-                raise ValueError("whoa no casing matches")
-            if not any(char.isdigit() for char in password):
-                raise ValueError("no numbers")
-            if not any(char in SPECIAL_CHARACTERS for char in password):
-                raise ValueError("no Character")
-            return password
-        except ValueError as e:
-            print(e)
-            raise 
+        SPECIAL_CHARACTERS = "!@#$%^&*"
+        if len(password) <= 5 or len(password) > 16:
+            raise PasswordError('Password does not meet length requirements')
+
+        has_upper = any(letter.isupper() for letter in password)
+        has_lower = any(letter.islower() for letter in password)
+        if not (has_upper and has_lower):
+            raise PasswordError("Password does not meet capitalization requirements")
+        if not any(char.isdigit() for char in password):
+            raise PasswordError("Password does not contain a numeric value")
+        if not any(char in SPECIAL_CHARACTERS for char in password):
+            raise PasswordError("Password does not contain a special character")
+    
+        return True
 
     def Id_Req_Validation(request_id):
         if not request_id:

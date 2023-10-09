@@ -1,1 +1,43 @@
-<h1> hello world </h1>
+{% extends "Home/base.html" %}
+
+{% block title %}Py Notes{% endblock %}
+
+{% block content %}
+<h1> Py Notes </h1>
+<h2> Integrated with GPT 3.5 </h2>
+<style>
+   
+    h1 {
+        padding-top: 300px;
+        color: white;
+    }
+    h2{
+        color:white;
+    }
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* To avoid any unwanted scrollbars */
+     }
+</style>
+
+<!-- Link to the JS files -->
+<script src="{{ url_for('static', filename='js/three.r134.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/vanta.globe.min.js') }}"></script>
+<script>
+    VANTA.GLOBE({
+      el: "body",
+      mouseControls: false,
+      touchControls: false,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x3fd1ff
+    })
+    </script>
+
+<!-- Add other content for the index page here -->
+{% endblock %}

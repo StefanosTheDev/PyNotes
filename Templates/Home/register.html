@@ -1,3 +1,5 @@
+{% extends "Home/base.html" %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
+   
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
@@ -16,15 +18,21 @@
                 <div class="card-header">Register</div>
                 <div class="card-body">
 
-                    <!-- Display flash messages -->
                     {% with messages = get_flashed_messages(with_categories=true) %}
-                        {% if messages %}
-                            {% for category, message in messages %}
-                                <div class="alert alert-{{ category }}">{{ message }}</div>
-                            {% endfor %}
-                        {% endif %}
-                    {% endwith %}
-
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ category }}">{{ message }}</div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                <h3>Registration Requirements </h3>
+                <ul>
+                    <li>Username Requirements: Must be 5-12 Charachters with Upper Lower Case</li>
+                    <li>Password Requirements: Must be 5-16 Charachters, with Upper Lower Case, one digit, and contain one of the special Charachters !@#$%^&* </li>
+                </ul>
+    
+              
+                        
                     <!-- Registration form using Flask-WTF and Jinja2 -->
                     <form action="{{ url_for('user.register_user') }}" method="post">
                         {{ form.hidden_tag() }}
@@ -46,9 +54,12 @@
                     </form>
 
                 </div>
+                
             </div>
-        </div>
+         
+        
     </div>
+    
 </div>
 
 <!-- Optional JavaScript; Bootstrap JS, Popper.js, and jQuery -->
@@ -58,3 +69,22 @@
 
 </body>
 </html>
+<style>
+    .nav-link{
+        color: black;
+        font-size: large;
+    }
+    ul {
+        list-style-type: none; /* Removes the default bullets */
+        padding: 0;
+        margin: 0;
+    }
+    
+    ul li {
+        padding: 5px 0; /* Adjusts the spacing between items */
+    }
+    html{
+        margin-bottom: 150px;
+    }
+</style>
+{% endblock %}

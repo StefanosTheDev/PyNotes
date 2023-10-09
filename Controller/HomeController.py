@@ -1,5 +1,6 @@
 from flask import Blueprint, request, jsonify, session, render_template
-
+from flask_navigation import Navigation
+nav = Navigation()
 home_blueprint = Blueprint('home', __name__)
 
 @home_blueprint.route('/', methods=['GET'])

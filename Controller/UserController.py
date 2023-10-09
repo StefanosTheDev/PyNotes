@@ -2,7 +2,8 @@ from flask import request, render_template, jsonify, redirect, url_for, flash, B
 
 from functools import wraps
 from Services.UserService import UserService
-from Forms.UserForms import RegisterForm
+from Forms.UserForms import RegisterForm, LoginForm
+from GlobalExceptions.ServiceException import ServiceException, UsernameError, PasswordError
 user_blueprint = Blueprint('user', __name__)
 
 
@@ -15,7 +16,6 @@ def login_required(f):
     return decorated_function
 
 @user_blueprint.route('/user/employees', methods=['GET'])
-@login_required
 def get_users():
      return UserService.display_users()
 
@@ -39,25 +39,26 @@ def register_user():
     form = RegisterForm()
 
     try:
-        if form.validate_on_submit():  # This will handle POST request and validation
+        if form.validate_on_submit():
             username = form.username.data
             password = form.password.data
             role = form.role.data
-
-            # Assuming UserService.create_user() returns some meaningful response
-            response = UserService.create_user(username, password, role)
             
-            if response:
+            createdUser = UserService.create_user(username, password, role)
+            if createdUser:
                 flash("User created successfully!", "success")
-                return redirect(url_for('login_user'))  # Redirect to a login page, for example
-
-            flash("Error in registration. Try again.", "danger")
+                return redirect(url_for('user.admin_login'))
+            
+      
+    except (UsernameError, PasswordError):  # You can catch multiple exceptions in a tuple
+        flash("Ensure you meet the username and password requirements.", "danger")
+        return render_template('Home/register.html', form=form)
     except Exception as e:
-        flash(str(e), "danger")
-    
+        print(f"Unexpected error: {str(e)}")  
+        flash("An unexpected error occurred. Please try again later.", "danger")
+        return render_template('Home/register.html', form=form)
+
     return render_template('Home/register.html', form=form)
-
-
 ### Refractored 
 
 
@@ -65,23 +66,27 @@ def register_user():
 def admin_delete_employee_by_Id(id):
     return UserService.delete_user_by_Id(id)
 
-@user_blueprint.route('/user/login', methods=['POST'])
+@user_blueprint.route('/user/login', methods=['GET', 'POST'])
 def admin_login():
-    try: 
-        data = request.get_json()
 
-        if not data:
-            return jsonify({"message": "No data provided"}), 400
+    form = LoginForm()
+    try:
+        if form.validate_on_submit():  # This will handle POST request and validation
+            username = form.username.data
+            password = form.password.data
 
-        username = data.get('username')
-        password = data.get('password')
-        
-        if not username or not password:
-            return jsonify({"message": "Username and password are required!"}), 400
+            # Assuming UserService.create_user() returns some meaningful response
+            response = UserService.login(username, password)
+            
+            if response:
+                flash("User created successfully!", "success")
+                return render_template('Notes/Notes.html')  # Redirect to a login page, for example
 
-        return UserService.login(username, password)
-    except Exception as error:
-        return jsonify({"Login Error": str(error)}), 500
+            flash("Error in registration. Try again.", "danger")
+    except Exception as e:
+        flash(str(e), "danger")
+    
+    return render_template('Home/Login.html', form=form)
     
 @user_blueprint.route('/user/logout', methods=['POST'])
 def admin_logout():
