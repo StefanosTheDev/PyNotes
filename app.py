@@ -2,6 +2,7 @@ from flask import Flask
 from Database.db import db
 from Controller.UserController import user_blueprint
 from Controller.HomeController import home_blueprint
+from Controller.NotesController import note_blueprint
 from flask_navigation import Navigation
 app = Flask(__name__, static_folder='static', template_folder='Templates')  # Set the static folder
 
@@ -22,9 +23,10 @@ db.init_app(app)
 
 app.register_blueprint(user_blueprint)
 app.register_blueprint(home_blueprint)
-
+app.register_blueprint(note_blueprint)
 
 @app.before_first_request
+
 def create_tables():
     db.create_all()
 

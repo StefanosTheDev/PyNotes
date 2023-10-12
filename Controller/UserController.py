@@ -48,8 +48,7 @@ def register_user():
             if createdUser:
                 flash("User created successfully!", "success")
                 return redirect(url_for('user.admin_login'))
-            
-      
+        
     except (UsernameError, PasswordError):  # You can catch multiple exceptions in a tuple
         flash("Ensure you meet the username and password requirements.", "danger")
         return render_template('Home/register.html', form=form)
@@ -59,8 +58,6 @@ def register_user():
         return render_template('Home/register.html', form=form)
 
     return render_template('Home/register.html', form=form)
-### Refractored 
-
 
 @user_blueprint.route('/user/delete/<int:id>', methods=['DELETE'])
 def admin_delete_employee_by_Id(id):

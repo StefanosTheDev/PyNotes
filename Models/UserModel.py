@@ -1,14 +1,15 @@
-# AdminModel.py
-from Database.db import db  # Assuming app.py and AdminModel.py are in the same directory
+from Database.db import db
 
 class UserModel(db.Model):
     __tablename__ = 'users'
     
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(50), unique=True, nullable=False)
-    password = db.Column(db.String(100), nullable=False)  # Consider hashing the password!
+    password = db.Column(db.String(100), nullable=False)
     role = db.Column(db.String(50), nullable=False)
-
+    
+    # Establishing the relationship with NotesModel
+    notes = db.relationship('Models.NotesModel.NotesModel', backref='user', lazy=True)
     def __str__(self):  
         return str(self.json())
 
@@ -19,6 +20,7 @@ class UserModel(db.Model):
         return {
             'id': self.id,
             'username': self.username,
-            'password': self.password,  # Ideally you'd never print or share this
-            'role': self.role
+            'password': self.password,
+            'role': self.role,
+            'notes': [note.json() for note in self.notes]  # Including user notes in user JSON
         }
