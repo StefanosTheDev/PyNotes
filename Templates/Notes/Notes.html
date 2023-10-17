@@ -1,23 +1,31 @@
 {% extends "Home/base.html" %}
 {% block content %}
+<h1> Note Card </h1>
 <div class="row">
+    {% for card in notes %}
     <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Card ID Number {{ card.notes_id }}</h5>
+                <ul>
+                    <li>{{ card.content }}</li>
+               
+                </ul>
+                <a href="{{ url_for('notes.create_note') }}" class="btn btn-success">Add Notes</a>
+                <a href="{{ url_for('notes.create_note') }}" class="btn btn-danger">Delete Note</a>
+                <a href="{{ url_for('notes.create_note') }}" class="btn btn-primary">Edit Note</a>
+                <a href="{{ url_for('notes.create_note') }}" class="btn btn-primary">Configure Note</a>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Notes</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Notes</a>
-        </div>
-      </div>
-    </div>
-  </div>
+    {% endfor %}
+</div>
+<style>
+    h1{
+        padding-left: 425px;
+    }   
+    .card-body{
+        padding-bottom: 3px;
+    }
+</style>
 {% endblock %}

@@ -7,21 +7,27 @@ from sqlalchemy.exc import IntegrityError, OperationalError
 import warnings
 
 class UserService:
+
+    ## Steps for the login.
+    ## Check for the username and if that exists, grab that object. If the password is equal to the password in the actual object. Return True
+    ## If the username exits but password wrong though.
     def login(username, password):
         try:
-            user = UserModel.query.filter_by(username=username).first()
+            user = UserModel.query.filter_by(username=username).first() # query for the user oject.
             if not user:
-                return jsonify({"message": "User does not exist"}), 401
+                raise UsernameError("User does not exist")
+            elif user.password == password:
+                print(f"There is a match between {user.password} and {password}")
             elif user.password != password:
-                return jsonify({"message": "Incorrect password"}), 401
+                raise PasswordError( "Incorrect password")
         
         # Set user logged-in session
             session['logged_in'] = True
             session['user_id'] = user.id
-            print(session)
-            return jsonify({"message": user.json()})
-        except Exception as e:
-            return jsonify({"error": str(e)})
+            return True
+        except (UsernameError, PasswordError) as e:
+            logging.error(e)
+            raise
 
     def logout():
         session.clear()  # Clear all session data

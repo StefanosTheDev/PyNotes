@@ -77,11 +77,11 @@ def admin_login():
             
             if response:
                 flash("User created successfully!", "success")
-                return render_template('Notes/Notes.html')  # Redirect to a login page, for example
-
-            flash("Error in registration. Try again.", "danger")
-    except Exception as e:
-        flash(str(e), "danger")
+                return redirect(url_for('notes.get_notes'))  # Redirect to a login page, for example
+            
+    except (UsernameError, PasswordError):
+        flash("Login Failed, Username and Password do not exist", 'danger')
+        return render_template('Home/Login.html', form=form)
     
     return render_template('Home/Login.html', form=form)
     
