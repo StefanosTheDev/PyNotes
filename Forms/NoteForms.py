@@ -7,3 +7,8 @@ class NoteForm(FlaskForm):
 
 class GPTForm(FlaskForm):
     Gpt = SubmitField('GPT Integration')
+
+class DeleteForm(FlaskForm):
+    #note_id = TextAreaField('ID:')
+    delete = SubmitField('Confirm Deletion')
+    cancel = SubmitField('Cancel Deletion')

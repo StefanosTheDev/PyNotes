@@ -2,7 +2,7 @@ from flask import request, render_template, jsonify, redirect, url_for, flash, B
 
 from functools import wraps
 from Services.NotesService import NotesService
-from Forms.NoteForms import NoteForm, GPTForm
+from Forms.NoteForms import NoteForm, GPTForm, DeleteForm
 from GlobalExceptions.ServiceException import ServiceException, UsernameError, PasswordError
 note_blueprint = Blueprint('notes', __name__)
 
@@ -36,3 +36,23 @@ def get_notes():
     notes = NotesService.get_notes()
     return render_template('Notes/Notes.html', notes=notes)
 
+@note_blueprint.route('/notes/delete/note', methods=['GET', 'POST'])
+def delete_note():
+    form = DeleteForm()
+    try:
+        note_id = request.form.get('notes_id') ## how to get note from the form.
+        clicked_button = request.form.get('delete')
+        print(note_id)
+        if clicked_button == 'delete':
+            print(note_id)
+            print('Delete was clicked')
+            pass
+        elif clicked_button == 'cancel':
+            ## perform cancelation features
+            pass
+        
+    except Exception as e:
+        flash(f"{e}", 'danger')
+        return render_template('Note/Notes.html', form=form)
+    
+    return render_template('Notes/DeleteNote.html', form=form)

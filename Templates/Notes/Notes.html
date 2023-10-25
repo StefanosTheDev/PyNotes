@@ -12,7 +12,10 @@
                
                 </ul>
                 <a href="{{ url_for('notes.create_note') }}" class="btn btn-success">Add Notes</a>
-                <a href="{{ url_for('notes.create_note') }}" class="btn btn-danger">Delete Note</a>
+                    
+                <form action="{{ url_for('notes.delete_note', notes_id=card.notes_id) }}" method="get">
+                    <button type="submit" class="btn btn-danger">Delete Note</button>
+                </form>
                 <a href="{{ url_for('notes.create_note') }}" class="btn btn-primary">Edit Note</a>
                 <a href="{{ url_for('notes.create_note') }}" class="btn btn-primary">Configure Note</a>
             </div>

@@ -6,3 +6,284 @@
 2023-10-12 07:18:49,209 - INFO -  * Restarting with watchdog (windowsapi)
 2023-10-12 07:18:50,863 - WARNING -  * Debugger is active!
 2023-10-12 07:18:50,876 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 04:35:03,712 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.164:5000
+2023-10-18 04:35:03,712 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-18 04:35:03,727 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 04:35:05,171 - WARNING -  * Debugger is active!
+2023-10-18 04:35:05,194 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 04:35:10,240 - INFO -  * Detected change in 'C:\\Program Files\\GNURadio-3.8\\tools\\python3\\python39.zip\\sqlite3\\__init__.pyc', reloading
+2023-10-18 04:35:10,242 - INFO -  * Detected change in 'C:\\Program Files\\GNURadio-3.8\\tools\\python3\\python39.zip\\sqlite3\\dbapi2.pyc', reloading
+2023-10-18 04:35:10,262 - INFO -  * Detected change in 'C:\\Program Files\\GNURadio-3.8\\tools\\python3\\python39.zip\\encodings\\unicode_escape.pyc', reloading
+2023-10-18 04:35:10,269 - INFO - 127.0.0.1 - - [18/Oct/2023 04:35:10] "GET / HTTP/1.1" 200 -
+2023-10-18 04:35:10,598 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 04:35:12,170 - WARNING -  * Debugger is active!
+2023-10-18 04:35:12,183 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 04:35:12,481 - INFO - 127.0.0.1 - - [18/Oct/2023 04:35:12] "[36mGET /static/js/three.r134.min.js HTTP/1.1[0m" 304 -
+2023-10-18 04:35:16,046 - INFO - 127.0.0.1 - - [18/Oct/2023 04:35:16] "GET / HTTP/1.1" 200 -
+2023-10-18 04:35:16,046 - INFO - 127.0.0.1 - - [18/Oct/2023 04:35:16] "[36mGET /static/js/three.r134.min.js HTTP/1.1[0m" 304 -
+2023-10-18 04:35:16,046 - INFO - 127.0.0.1 - - [18/Oct/2023 04:35:16] "[36mGET /static/js/vanta.globe.min.js HTTP/1.1[0m" 304 -
+2023-10-18 04:35:17,663 - INFO - 127.0.0.1 - - [18/Oct/2023 04:35:17] "GET /user/login HTTP/1.1" 200 -
+2023-10-18 04:35:18,860 - INFO - 127.0.0.1 - - [18/Oct/2023 04:35:18] "GET /user/register HTTP/1.1" 200 -
+2023-10-18 04:35:19,427 - INFO - 127.0.0.1 - - [18/Oct/2023 04:35:19] "GET /user/login HTTP/1.1" 200 -
+2023-10-18 04:35:20,083 - INFO - 127.0.0.1 - - [18/Oct/2023 04:35:20] "GET /user/login HTTP/1.1" 200 -
+2023-10-18 04:35:23,290 - ERROR - User does not exist
+2023-10-18 04:35:23,290 - INFO - 127.0.0.1 - - [18/Oct/2023 04:35:23] "POST /user/login HTTP/1.1" 200 -
+2023-10-18 04:35:42,673 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.164:5000
+2023-10-18 04:35:42,674 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-18 04:35:42,691 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 04:35:44,395 - WARNING -  * Debugger is active!
+2023-10-18 04:35:44,410 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 04:35:45,472 - INFO - 127.0.0.1 - - [18/Oct/2023 04:35:45] "GET /user/login HTTP/1.1" 200 -
+2023-10-18 04:35:51,850 - INFO - 127.0.0.1 - - [18/Oct/2023 04:35:51] "GET /user/register HTTP/1.1" 200 -
+2023-10-18 04:36:52,038 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Models\\NotesModel.py', reloading
+2023-10-18 04:36:52,038 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Models\\NotesModel.py', reloading
+2023-10-18 04:36:52,454 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 04:36:54,038 - WARNING -  * Debugger is active!
+2023-10-18 04:36:54,055 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 04:38:26,382 - INFO - 127.0.0.1 - - [18/Oct/2023 04:38:26] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-18 04:38:31,794 - INFO - 127.0.0.1 - - [18/Oct/2023 04:38:31] "GET /notes/create HTTP/1.1" 200 -
+2023-10-18 04:54:09,514 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Forms\\NoteForms.py', reloading
+2023-10-18 04:54:09,514 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Forms\\NoteForms.py', reloading
+2023-10-18 04:54:09,514 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Forms\\NoteForms.py', reloading
+2023-10-18 04:54:09,514 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Forms\\NoteForms.py', reloading
+2023-10-18 04:54:09,602 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 04:54:13,632 - WARNING -  * Debugger is active!
+2023-10-18 04:54:13,647 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:05:54,253 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\werkzeug\\_internal.py', reloading
+2023-10-18 05:05:54,354 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\werkzeug\\user_agent.py', reloading
+2023-10-18 05:05:54,369 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\werkzeug\\datastructures\\auth.py', reloading
+2023-10-18 05:05:55,126 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:05:56,650 - WARNING -  * Debugger is active!
+2023-10-18 05:05:56,663 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:12:09,336 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\flask\\app.py', reloading
+2023-10-18 05:12:09,336 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:12:09,336 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:12:09,353 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\flask\\templating.py', reloading
+2023-10-18 05:12:09,369 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\jinja2\\environment.py', reloading
+2023-10-18 05:12:09,370 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\jinja2\\loaders.py', reloading
+2023-10-18 05:12:09,403 - INFO - 127.0.0.1 - - [18/Oct/2023 05:12:09] "[35m[1mGET /notes/getNotes HTTP/1.1[0m" 500 -
+2023-10-18 05:12:09,749 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:12:12,784 - WARNING -  * Debugger is active!
+2023-10-18 05:12:12,801 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:12:13,069 - INFO - 127.0.0.1 - - [18/Oct/2023 05:12:13] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-18 05:12:13,108 - INFO - 127.0.0.1 - - [18/Oct/2023 05:12:13] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:12:25,840 - INFO - 127.0.0.1 - - [18/Oct/2023 05:12:25] "[35m[1mGET /notes/getNotes HTTP/1.1[0m" 500 -
+2023-10-18 05:12:25,858 - INFO - 127.0.0.1 - - [18/Oct/2023 05:12:25] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-18 05:12:25,859 - INFO - 127.0.0.1 - - [18/Oct/2023 05:12:25] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-18 05:12:25,872 - INFO - 127.0.0.1 - - [18/Oct/2023 05:12:25] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:12:25,880 - INFO - 127.0.0.1 - - [18/Oct/2023 05:12:25] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:13:06,642 - INFO - 127.0.0.1 - - [18/Oct/2023 05:13:06] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-18 05:13:15,962 - INFO - 127.0.0.1 - - [18/Oct/2023 05:13:15] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-18 05:13:55,088 - INFO - 127.0.0.1 - - [18/Oct/2023 05:13:55] "[35m[1mGET /notes/getNotes HTTP/1.1[0m" 500 -
+2023-10-18 05:13:55,115 - INFO - 127.0.0.1 - - [18/Oct/2023 05:13:55] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-18 05:13:55,117 - INFO - 127.0.0.1 - - [18/Oct/2023 05:13:55] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-18 05:13:55,131 - INFO - 127.0.0.1 - - [18/Oct/2023 05:13:55] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:13:55,141 - INFO - 127.0.0.1 - - [18/Oct/2023 05:13:55] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:14:03,433 - INFO - 127.0.0.1 - - [18/Oct/2023 05:14:03] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-18 05:14:23,801 - INFO - 127.0.0.1 - - [18/Oct/2023 05:14:23] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-18 05:14:26,947 - INFO - 127.0.0.1 - - [18/Oct/2023 05:14:26] "GET /notes/create HTTP/1.1" 200 -
+2023-10-18 05:20:24,021 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\flask\\helpers.py', reloading
+2023-10-18 05:20:24,038 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\werkzeug\\routing\\map.py', reloading
+2023-10-18 05:20:24,071 - INFO - 127.0.0.1 - - [18/Oct/2023 05:20:24] "[35m[1mGET /notes/getNotes HTTP/1.1[0m" 500 -
+2023-10-18 05:20:24,087 - INFO - 127.0.0.1 - - [18/Oct/2023 05:20:24] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-18 05:20:24,089 - INFO - 127.0.0.1 - - [18/Oct/2023 05:20:24] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-18 05:20:24,089 - INFO - 127.0.0.1 - - [18/Oct/2023 05:20:24] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:20:24,109 - INFO - 127.0.0.1 - - [18/Oct/2023 05:20:24] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:20:24,746 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:20:26,162 - WARNING -  * Debugger is active!
+2023-10-18 05:20:26,177 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:21:00,944 - INFO - 127.0.0.1 - - [18/Oct/2023 05:21:00] "[35m[1mGET /notes/getNotes HTTP/1.1[0m" 500 -
+2023-10-18 05:21:01,258 - INFO - 127.0.0.1 - - [18/Oct/2023 05:21:01] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-18 05:21:01,258 - INFO - 127.0.0.1 - - [18/Oct/2023 05:21:01] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-18 05:21:01,271 - INFO - 127.0.0.1 - - [18/Oct/2023 05:21:01] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:21:01,282 - INFO - 127.0.0.1 - - [18/Oct/2023 05:21:01] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:21:06,923 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:21:06,924 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:21:06,924 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:21:06,925 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:21:06,925 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:21:06,925 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:21:08,053 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:21:09,508 - WARNING -  * Debugger is active!
+2023-10-18 05:21:09,524 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:21:59,541 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:21:59,547 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:21:59,547 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:21:59,548 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:21:59,548 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:21:59,548 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:21:59,548 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:21:59,548 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:21:59,677 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:22:01,150 - WARNING -  * Debugger is active!
+2023-10-18 05:22:01,167 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:24:07,058 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:24:07,058 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:24:07,060 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:24:07,060 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:24:07,061 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:24:07,061 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:24:07,062 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:24:07,329 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:24:08,813 - WARNING -  * Debugger is active!
+2023-10-18 05:24:08,815 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:24:11,065 - INFO - 127.0.0.1 - - [18/Oct/2023 05:24:11] "[35m[1mGET /notes/getNotes HTTP/1.1[0m" 500 -
+2023-10-18 05:24:11,384 - INFO - 127.0.0.1 - - [18/Oct/2023 05:24:11] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-18 05:24:11,384 - INFO - 127.0.0.1 - - [18/Oct/2023 05:24:11] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-18 05:24:11,391 - INFO - 127.0.0.1 - - [18/Oct/2023 05:24:11] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:24:11,401 - INFO - 127.0.0.1 - - [18/Oct/2023 05:24:11] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:26:47,893 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\flask\\globals.py', reloading
+2023-10-18 05:26:48,158 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:26:49,584 - WARNING -  * Debugger is active!
+2023-10-18 05:26:49,599 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:30:15,912 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:30:15,912 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:30:15,912 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:30:15,912 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:30:15,912 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:30:15,912 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:30:16,882 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:30:26,788 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.164:5000
+2023-10-18 05:30:26,789 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-18 05:30:26,789 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:30:28,234 - WARNING -  * Debugger is active!
+2023-10-18 05:30:28,250 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:30:29,038 - INFO - 127.0.0.1 - - [18/Oct/2023 05:30:29] "[35m[1mGET /notes/getNotes HTTP/1.1[0m" 500 -
+2023-10-18 05:30:29,358 - INFO - 127.0.0.1 - - [18/Oct/2023 05:30:29] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-18 05:30:29,358 - INFO - 127.0.0.1 - - [18/Oct/2023 05:30:29] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-18 05:30:29,370 - INFO - 127.0.0.1 - - [18/Oct/2023 05:30:29] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:30:29,377 - INFO - 127.0.0.1 - - [18/Oct/2023 05:30:29] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:30:35,921 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\flask\\json\\tag.py', reloading
+2023-10-18 05:30:35,936 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\flask\\config.py', reloading
+2023-10-18 05:30:35,968 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\flask_sqlalchemy\\utils.py', reloading
+2023-10-18 05:30:36,802 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:30:38,225 - WARNING -  * Debugger is active!
+2023-10-18 05:30:38,237 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:33:11,012 - INFO - 127.0.0.1 - - [18/Oct/2023 05:33:11] "[35m[1mGET /notes/getNotes HTTP/1.1[0m" 500 -
+2023-10-18 05:33:11,329 - INFO - 127.0.0.1 - - [18/Oct/2023 05:33:11] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-18 05:33:11,329 - INFO - 127.0.0.1 - - [18/Oct/2023 05:33:11] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-18 05:33:11,346 - INFO - 127.0.0.1 - - [18/Oct/2023 05:33:11] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:33:11,346 - INFO - 127.0.0.1 - - [18/Oct/2023 05:33:11] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:34:02,562 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Database\\db.py', reloading
+2023-10-18 05:34:02,571 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Database\\db.py', reloading
+2023-10-18 05:34:02,576 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Models\\__init__.py', reloading
+2023-10-18 05:34:02,576 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Models\\__init__.py', reloading
+2023-10-18 05:34:03,625 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:34:05,063 - WARNING -  * Debugger is active!
+2023-10-18 05:34:05,082 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:34:18,560 - INFO - 127.0.0.1 - - [18/Oct/2023 05:34:18] "[35m[1mGET /notes/getNotes HTTP/1.1[0m" 500 -
+2023-10-18 05:34:18,893 - INFO - 127.0.0.1 - - [18/Oct/2023 05:34:18] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-18 05:34:18,893 - INFO - 127.0.0.1 - - [18/Oct/2023 05:34:18] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-18 05:34:18,901 - INFO - 127.0.0.1 - - [18/Oct/2023 05:34:18] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:34:18,912 - INFO - 127.0.0.1 - - [18/Oct/2023 05:34:18] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:34:19,110 - INFO - 127.0.0.1 - - [18/Oct/2023 05:34:19] "[35m[1mGET /notes/getNotes HTTP/1.1[0m" 500 -
+2023-10-18 05:34:19,127 - INFO - 127.0.0.1 - - [18/Oct/2023 05:34:19] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-18 05:34:19,129 - INFO - 127.0.0.1 - - [18/Oct/2023 05:34:19] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-18 05:34:19,142 - INFO - 127.0.0.1 - - [18/Oct/2023 05:34:19] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:34:19,152 - INFO - 127.0.0.1 - - [18/Oct/2023 05:34:19] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:34:48,769 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.164:5000
+2023-10-18 05:34:48,770 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-18 05:34:48,784 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:34:50,208 - WARNING -  * Debugger is active!
+2023-10-18 05:34:50,221 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:34:50,357 - INFO - 127.0.0.1 - - [18/Oct/2023 05:34:50] "[35m[1mGET /notes/getNotes HTTP/1.1[0m" 500 -
+2023-10-18 05:34:50,672 - INFO - 127.0.0.1 - - [18/Oct/2023 05:34:50] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-18 05:34:50,672 - INFO - 127.0.0.1 - - [18/Oct/2023 05:34:50] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-18 05:34:50,681 - INFO - 127.0.0.1 - - [18/Oct/2023 05:34:50] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:34:50,689 - INFO - 127.0.0.1 - - [18/Oct/2023 05:34:50] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:35:02,929 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:35:02,929 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:35:02,929 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:35:02,930 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:35:02,930 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:35:02,930 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:35:03,929 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:35:05,374 - WARNING -  * Debugger is active!
+2023-10-18 05:35:05,387 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:35:05,523 - INFO - 127.0.0.1 - - [18/Oct/2023 05:35:05] "[35m[1mGET /notes/getNotes HTTP/1.1[0m" 500 -
+2023-10-18 05:35:05,846 - INFO - 127.0.0.1 - - [18/Oct/2023 05:35:05] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-18 05:35:05,847 - INFO - 127.0.0.1 - - [18/Oct/2023 05:35:05] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-18 05:35:05,858 - INFO - 127.0.0.1 - - [18/Oct/2023 05:35:05] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:35:05,864 - INFO - 127.0.0.1 - - [18/Oct/2023 05:35:05] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:35:13,175 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:35:13,176 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:35:13,177 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:35:13,177 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:35:13,177 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:35:13,178 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 05:35:13,950 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:35:15,399 - WARNING -  * Debugger is active!
+2023-10-18 05:35:15,416 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:35:15,499 - INFO -  * Detected change in 'C:\\Program Files\\GNURadio-3.8\\tools\\python3\\python39.zip\\sqlite3\\__init__.pyc', reloading
+2023-10-18 05:35:15,501 - INFO -  * Detected change in 'C:\\Program Files\\GNURadio-3.8\\tools\\python3\\python39.zip\\sqlite3\\dbapi2.pyc', reloading
+2023-10-18 05:35:15,516 - INFO -  * Detected change in 'C:\\Program Files\\GNURadio-3.8\\tools\\python3\\python39.zip\\encodings\\unicode_escape.pyc', reloading
+2023-10-18 05:35:15,565 - INFO - 127.0.0.1 - - [18/Oct/2023 05:35:15] "[35m[1mGET /notes/getNotes HTTP/1.1[0m" 500 -
+2023-10-18 05:35:15,875 - INFO - 127.0.0.1 - - [18/Oct/2023 05:35:15] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-18 05:35:15,876 - INFO - 127.0.0.1 - - [18/Oct/2023 05:35:15] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-18 05:35:15,883 - INFO - 127.0.0.1 - - [18/Oct/2023 05:35:15] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:35:15,883 - INFO - 127.0.0.1 - - [18/Oct/2023 05:35:15] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:35:16,647 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:35:18,071 - WARNING -  * Debugger is active!
+2023-10-18 05:35:18,087 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:41:29,994 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.164:5000
+2023-10-18 05:41:29,994 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-18 05:41:31,845 - INFO - 127.0.0.1 - - [18/Oct/2023 05:41:31] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-18 05:41:38,268 - INFO - 127.0.0.1 - - [18/Oct/2023 05:41:38] "GET /notes/create HTTP/1.1" 200 -
+2023-10-18 05:42:24,559 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.164:5000
+2023-10-18 05:42:24,559 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-18 05:42:24,573 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 05:42:25,901 - WARNING -  * Debugger is active!
+2023-10-18 05:42:25,917 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 05:42:34,960 - INFO - 127.0.0.1 - - [18/Oct/2023 05:42:34] "[35m[1mGET /notes/getNotes HTTP/1.1[0m" 500 -
+2023-10-18 05:42:35,275 - INFO - 127.0.0.1 - - [18/Oct/2023 05:42:35] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-18 05:42:35,275 - INFO - 127.0.0.1 - - [18/Oct/2023 05:42:35] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-18 05:42:35,298 - INFO - 127.0.0.1 - - [18/Oct/2023 05:42:35] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:42:35,313 - INFO - 127.0.0.1 - - [18/Oct/2023 05:42:35] "[36mGET /notes/getNotes?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 05:45:25,657 - INFO - 127.0.0.1 - - [18/Oct/2023 05:45:25] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-18 05:45:26,829 - INFO - 127.0.0.1 - - [18/Oct/2023 05:45:26] "GET /notes/create HTTP/1.1" 200 -
+2023-10-18 05:45:57,288 - INFO - 127.0.0.1 - - [18/Oct/2023 05:45:57] "[35m[1mGET /notes/delete/note?note_id=5 HTTP/1.1[0m" 500 -
+2023-10-18 05:45:57,308 - INFO - 127.0.0.1 - - [18/Oct/2023 05:45:57] "GET /notes/delete/note?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-10-18 05:45:57,310 - INFO - 127.0.0.1 - - [18/Oct/2023 05:45:57] "GET /notes/delete/note?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-10-18 05:45:57,327 - INFO - 127.0.0.1 - - [18/Oct/2023 05:45:57] "GET /notes/delete/note?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-10-18 05:45:57,340 - INFO - 127.0.0.1 - - [18/Oct/2023 05:45:57] "[36mGET /notes/delete/note?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-18 07:51:15,545 - INFO -  * Detected change in 'C:\\Program Files\\GNURadio-3.8\\tools\\python3\\python39.zip', reloading
+2023-10-18 07:51:15,873 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\app.py', reloading
+2023-10-18 07:51:15,873 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\app.py', reloading
+2023-10-18 07:51:15,889 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\jinja2\\environment.py', reloading
+2023-10-18 07:51:15,889 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\jinja2\\loaders.py', reloading
+2023-10-18 07:51:15,889 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\flask\\globals.py', reloading
+2023-10-18 07:51:15,889 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\werkzeug\\routing\\map.py', reloading
+2023-10-18 07:51:15,889 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\flask\\helpers.py', reloading
+2023-10-18 07:51:15,904 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\flask\\templating.py', reloading
+2023-10-18 07:51:15,904 - INFO -  * Detected change in 'C:\\Users\\Kasey\\AppData\\Roaming\\Python\\Python39\\site-packages\\flask\\app.py', reloading
+2023-10-18 07:51:15,920 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Models\\NotesModel.py', reloading
+2023-10-18 07:51:15,920 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Models\\NotesModel.py', reloading
+2023-10-18 07:51:15,936 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Forms\\NoteForms.py', reloading
+2023-10-18 07:51:15,936 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Forms\\NoteForms.py', reloading
+2023-10-18 07:51:15,936 - INFO -  * Detected change in 'c:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 07:51:15,936 - INFO -  * Detected change in 'C:\\Users\\Kasey\\Desktop\\PyNotes\\PyNotes\\Controller\\NotesController.py', reloading
+2023-10-18 07:51:17,170 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 07:51:18,899 - WARNING -  * Debugger is active!
+2023-10-18 07:51:18,899 - INFO -  * Debugger PIN: 139-890-081
+2023-10-18 07:51:27,210 - INFO -  * Detected change in 'C:\\Program Files\\GNURadio-3.8\\tools\\python3\\python39.zip', reloading
+2023-10-18 07:51:28,366 - INFO -  * Restarting with watchdog (windowsapi)
+2023-10-18 07:51:29,756 - WARNING -  * Debugger is active!
+2023-10-18 07:51:29,756 - INFO -  * Debugger PIN: 139-890-081
