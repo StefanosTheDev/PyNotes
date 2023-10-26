@@ -409,3 +409,155 @@
 2023-10-25 21:33:07,703 - INFO - 127.0.0.1 - - [25/Oct/2023 21:33:07] "POST /notes/delete/note HTTP/1.1" 200 -
 2023-10-25 21:33:10,537 - INFO - 127.0.0.1 - - [25/Oct/2023 21:33:10] "[32mPOST /notes/delete/note HTTP/1.1[0m" 302 -
 2023-10-25 21:33:10,541 - INFO - 127.0.0.1 - - [25/Oct/2023 21:33:10] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:21:48,565 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.228:5000
+2023-10-25 22:21:48,565 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-25 22:22:07,159 - INFO - 127.0.0.1 - - [25/Oct/2023 22:22:07] "GET / HTTP/1.1" 200 -
+2023-10-25 22:22:07,226 - INFO - 127.0.0.1 - - [25/Oct/2023 22:22:07] "[36mGET /static/js/vanta.globe.min.js HTTP/1.1[0m" 304 -
+2023-10-25 22:22:07,227 - INFO - 127.0.0.1 - - [25/Oct/2023 22:22:07] "[36mGET /static/js/three.r134.min.js HTTP/1.1[0m" 304 -
+2023-10-25 22:22:08,543 - INFO - 127.0.0.1 - - [25/Oct/2023 22:22:08] "GET /user/login HTTP/1.1" 200 -
+2023-10-25 22:22:13,096 - INFO - 127.0.0.1 - - [25/Oct/2023 22:22:13] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+2023-10-25 22:22:13,107 - INFO - 127.0.0.1 - - [25/Oct/2023 22:22:13] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:22:34,841 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.228:5000
+2023-10-25 22:22:34,841 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-25 22:22:41,880 - INFO - 127.0.0.1 - - [25/Oct/2023 22:22:41] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:22:45,340 - INFO - 127.0.0.1 - - [25/Oct/2023 22:22:45] "GET /user/login HTTP/1.1" 200 -
+2023-10-25 22:22:49,547 - INFO - 127.0.0.1 - - [25/Oct/2023 22:22:49] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+2023-10-25 22:22:49,552 - INFO - 127.0.0.1 - - [25/Oct/2023 22:22:49] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:22:55,353 - INFO - 127.0.0.1 - - [25/Oct/2023 22:22:55] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:22:59,544 - INFO - 127.0.0.1 - - [25/Oct/2023 22:22:59] "[32mPOST /notes/create HTTP/1.1[0m" 302 -
+2023-10-25 22:22:59,550 - INFO - 127.0.0.1 - - [25/Oct/2023 22:22:59] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:23:01,673 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:01] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:23:03,912 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:03] "[32mPOST /notes/create HTTP/1.1[0m" 302 -
+2023-10-25 22:23:03,917 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:03] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:23:05,225 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:05] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:23:07,409 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:07] "[32mPOST /notes/create HTTP/1.1[0m" 302 -
+2023-10-25 22:23:07,415 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:07] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:23:21,070 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:21] "GET /notes/delete/note?notes_id=1 HTTP/1.1" 200 -
+2023-10-25 22:23:22,660 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:22] "[32mPOST /notes/delete/note HTTP/1.1[0m" 302 -
+2023-10-25 22:23:22,665 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:22] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:23:23,494 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:23] "GET /notes/delete/note?notes_id=2 HTTP/1.1" 200 -
+2023-10-25 22:23:24,132 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:24] "[32mPOST /notes/delete/note HTTP/1.1[0m" 302 -
+2023-10-25 22:23:24,137 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:24] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:23:24,825 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:24] "GET /notes/delete/note?notes_id=3 HTTP/1.1" 200 -
+2023-10-25 22:23:25,540 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:25] "[32mPOST /notes/delete/note HTTP/1.1[0m" 302 -
+2023-10-25 22:23:25,546 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:25] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:23:27,484 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:27] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:23:29,888 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:29] "[32mPOST /notes/create HTTP/1.1[0m" 302 -
+2023-10-25 22:23:29,894 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:29] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:23:44,593 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:44] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:23:47,038 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:47] "[32mPOST /notes/create HTTP/1.1[0m" 302 -
+2023-10-25 22:23:47,044 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:47] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:23:54,153 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:54] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:23:56,576 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:56] "[32mPOST /notes/create HTTP/1.1[0m" 302 -
+2023-10-25 22:23:56,582 - INFO - 127.0.0.1 - - [25/Oct/2023 22:23:56] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:25:26,647 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:26] "GET /notes/delete/note?notes_id=1 HTTP/1.1" 200 -
+2023-10-25 22:25:27,553 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:27] "[32mPOST /notes/delete/note HTTP/1.1[0m" 302 -
+2023-10-25 22:25:27,559 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:27] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:25:28,544 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:28] "GET /notes/delete/note?notes_id=2 HTTP/1.1" 200 -
+2023-10-25 22:25:29,507 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:29] "[32mPOST /notes/delete/note HTTP/1.1[0m" 302 -
+2023-10-25 22:25:29,512 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:29] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:25:30,052 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:30] "GET /notes/delete/note?notes_id=3 HTTP/1.1" 200 -
+2023-10-25 22:25:30,935 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:30] "[32mPOST /notes/delete/note HTTP/1.1[0m" 302 -
+2023-10-25 22:25:30,940 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:30] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:25:37,911 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:37] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:25:39,192 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:39] "[32mPOST /notes/create HTTP/1.1[0m" 302 -
+2023-10-25 22:25:39,198 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:39] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:25:40,279 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:40] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:25:41,971 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:41] "[32mPOST /notes/create HTTP/1.1[0m" 302 -
+2023-10-25 22:25:41,977 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:41] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:25:42,848 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:42] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:25:44,210 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:44] "[32mPOST /notes/create HTTP/1.1[0m" 302 -
+2023-10-25 22:25:44,217 - INFO - 127.0.0.1 - - [25/Oct/2023 22:25:44] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:26:51,978 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.228:5000
+2023-10-25 22:26:51,978 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-25 22:26:56,677 - INFO - 127.0.0.1 - - [25/Oct/2023 22:26:56] "GET / HTTP/1.1" 200 -
+2023-10-25 22:26:56,744 - INFO - 127.0.0.1 - - [25/Oct/2023 22:26:56] "[36mGET /static/js/three.r134.min.js HTTP/1.1[0m" 304 -
+2023-10-25 22:26:56,745 - INFO - 127.0.0.1 - - [25/Oct/2023 22:26:56] "[36mGET /static/js/vanta.globe.min.js HTTP/1.1[0m" 304 -
+2023-10-25 22:26:58,469 - INFO - 127.0.0.1 - - [25/Oct/2023 22:26:58] "GET /user/login HTTP/1.1" 200 -
+2023-10-25 22:27:02,454 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:02] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+2023-10-25 22:27:02,475 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:02] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:27:07,535 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:07] "GET /notes/delete/note?notes_id=1 HTTP/1.1" 200 -
+2023-10-25 22:27:08,391 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:08] "[32mPOST /notes/delete/note HTTP/1.1[0m" 302 -
+2023-10-25 22:27:08,396 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:08] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:27:08,994 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:08] "GET /notes/delete/note?notes_id=2 HTTP/1.1" 200 -
+2023-10-25 22:27:09,643 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:09] "[32mPOST /notes/delete/note HTTP/1.1[0m" 302 -
+2023-10-25 22:27:09,648 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:09] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:27:10,256 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:10] "GET /notes/delete/note?notes_id=3 HTTP/1.1" 200 -
+2023-10-25 22:27:10,775 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:10] "[32mPOST /notes/delete/note HTTP/1.1[0m" 302 -
+2023-10-25 22:27:10,780 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:10] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:27:14,819 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:14] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:27:16,051 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:16] "POST /notes/create HTTP/1.1" 200 -
+2023-10-25 22:27:17,085 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:17] "POST /notes/create HTTP/1.1" 200 -
+2023-10-25 22:27:18,198 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:18] "[32mPOST /notes/create HTTP/1.1[0m" 302 -
+2023-10-25 22:27:18,203 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:18] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:27:20,279 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:20] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:27:21,595 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:21] "[32mPOST /notes/create HTTP/1.1[0m" 302 -
+2023-10-25 22:27:21,601 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:21] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:27:22,879 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:22] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:27:24,031 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:24] "[32mPOST /notes/create HTTP/1.1[0m" 302 -
+2023-10-25 22:27:24,040 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:24] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:27:56,867 - INFO - 127.0.0.1 - - [25/Oct/2023 22:27:56] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:28:02,945 - INFO - 127.0.0.1 - - [25/Oct/2023 22:28:02] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:30:28,455 - INFO - 127.0.0.1 - - [25/Oct/2023 22:30:28] "GET /notes/delete/note?notes_id=1 HTTP/1.1" 200 -
+2023-10-25 22:30:29,525 - INFO - 127.0.0.1 - - [25/Oct/2023 22:30:29] "[32mPOST /notes/delete/note HTTP/1.1[0m" 302 -
+2023-10-25 22:30:29,534 - INFO - 127.0.0.1 - - [25/Oct/2023 22:30:29] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:30:30,991 - INFO - 127.0.0.1 - - [25/Oct/2023 22:30:30] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:30:35,501 - INFO - 127.0.0.1 - - [25/Oct/2023 22:30:35] "[32mPOST /notes/create HTTP/1.1[0m" 302 -
+2023-10-25 22:30:35,518 - INFO - 127.0.0.1 - - [25/Oct/2023 22:30:35] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:30:40,239 - INFO - 127.0.0.1 - - [25/Oct/2023 22:30:40] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:31:08,183 - INFO - 127.0.0.1 - - [25/Oct/2023 22:31:08] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:31:15,086 - INFO - 127.0.0.1 - - [25/Oct/2023 22:31:15] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:31:21,083 - INFO - 127.0.0.1 - - [25/Oct/2023 22:31:21] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:31:37,799 - INFO - 127.0.0.1 - - [25/Oct/2023 22:31:37] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:31:42,002 - INFO - 127.0.0.1 - - [25/Oct/2023 22:31:42] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:32:14,152 - INFO - 127.0.0.1 - - [25/Oct/2023 22:32:14] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:32:14,798 - INFO - 127.0.0.1 - - [25/Oct/2023 22:32:14] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:32:22,028 - INFO - 127.0.0.1 - - [25/Oct/2023 22:32:22] "GET / HTTP/1.1" 200 -
+2023-10-25 22:32:22,054 - INFO - 127.0.0.1 - - [25/Oct/2023 22:32:22] "[36mGET /static/js/three.r134.min.js HTTP/1.1[0m" 304 -
+2023-10-25 22:32:22,054 - INFO - 127.0.0.1 - - [25/Oct/2023 22:32:22] "[36mGET /static/js/vanta.globe.min.js HTTP/1.1[0m" 304 -
+2023-10-25 22:32:23,365 - INFO - 127.0.0.1 - - [25/Oct/2023 22:32:23] "GET /user/login HTTP/1.1" 200 -
+2023-10-25 22:32:28,664 - INFO - 127.0.0.1 - - [25/Oct/2023 22:32:28] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+2023-10-25 22:32:28,666 - INFO - 127.0.0.1 - - [25/Oct/2023 22:32:28] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:32:58,500 - INFO - 127.0.0.1 - - [25/Oct/2023 22:32:58] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:33:00,932 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:00] "GET /notes/delete/note?notes_id=2 HTTP/1.1" 200 -
+2023-10-25 22:33:02,884 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:02] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:33:11,964 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:11] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:33:13,422 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:13] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:33:15,798 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:15] "GET /notes/delete/note?notes_id=2 HTTP/1.1" 200 -
+2023-10-25 22:33:17,081 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:17] "[32mPOST /notes/delete/note HTTP/1.1[0m" 302 -
+2023-10-25 22:33:17,081 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:17] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:33:18,676 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:18] "GET /notes/create HTTP/1.1" 200 -
+2023-10-25 22:33:35,521 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:35] "GET /user/login HTTP/1.1" 200 -
+2023-10-25 22:33:39,322 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:39] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+2023-10-25 22:33:39,331 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:39] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:33:49,741 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:49] "GET /user/register HTTP/1.1" 200 -
+2023-10-25 22:33:53,287 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:53] "GET / HTTP/1.1" 200 -
+2023-10-25 22:33:53,306 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:53] "[36mGET /static/js/three.r134.min.js HTTP/1.1[0m" 304 -
+2023-10-25 22:33:53,306 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:53] "[36mGET /static/js/vanta.globe.min.js HTTP/1.1[0m" 304 -
+2023-10-25 22:33:55,131 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:55] "GET /user/register HTTP/1.1" 200 -
+2023-10-25 22:33:58,593 - ERROR - Username does not have an upper and lower case letter
+2023-10-25 22:33:58,594 - INFO - 127.0.0.1 - - [25/Oct/2023 22:33:58] "POST /user/register HTTP/1.1" 200 -
+2023-10-25 22:34:10,132 - INFO - 127.0.0.1 - - [25/Oct/2023 22:34:10] "[32mPOST /user/register HTTP/1.1[0m" 302 -
+2023-10-25 22:34:10,147 - INFO - 127.0.0.1 - - [25/Oct/2023 22:34:10] "GET /user/login HTTP/1.1" 200 -
+2023-10-25 22:34:13,017 - INFO - 127.0.0.1 - - [25/Oct/2023 22:34:13] "GET /user/register HTTP/1.1" 200 -
+2023-10-25 22:34:15,692 - INFO - 127.0.0.1 - - [25/Oct/2023 22:34:15] "GET /user/login HTTP/1.1" 200 -
+2023-10-25 22:34:19,407 - INFO - 127.0.0.1 - - [25/Oct/2023 22:34:19] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+2023-10-25 22:34:19,414 - INFO - 127.0.0.1 - - [25/Oct/2023 22:34:19] "GET /notes/getNotes HTTP/1.1" 200 -
+2023-10-25 22:35:03,862 - INFO - 127.0.0.1 - - [25/Oct/2023 22:35:03] "GET /user/login HTTP/1.1" 200 -
+2023-10-25 22:35:31,829 - INFO - 127.0.0.1 - - [25/Oct/2023 22:35:31] "GET /user/login HTTP/1.1" 200 -
+2023-10-25 22:35:42,485 - INFO - 127.0.0.1 - - [25/Oct/2023 22:35:42] "GET /user/login HTTP/1.1" 200 -
+2023-10-25 22:35:55,095 - INFO - 127.0.0.1 - - [25/Oct/2023 22:35:55] "GET /user/login HTTP/1.1" 200 -
+2023-10-25 22:36:02,298 - INFO - 127.0.0.1 - - [25/Oct/2023 22:36:02] "GET /user/login HTTP/1.1" 200 -
+2023-10-25 22:36:08,765 - INFO - 127.0.0.1 - - [25/Oct/2023 22:36:08] "GET /user/login HTTP/1.1" 200 -
+2023-10-25 22:36:09,295 - INFO - 127.0.0.1 - - [25/Oct/2023 22:36:09] "GET /user/login HTTP/1.1" 200 -
+2023-10-25 22:36:10,956 - INFO - 127.0.0.1 - - [25/Oct/2023 22:36:10] "GET /user/register HTTP/1.1" 200 -
+2023-10-25 22:36:11,622 - INFO - 127.0.0.1 - - [25/Oct/2023 22:36:11] "GET /user/login HTTP/1.1" 200 -

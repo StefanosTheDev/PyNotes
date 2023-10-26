@@ -1,6 +1,8 @@
 {% extends "Home/base.html" %}
 {% block content %}
-<h1> Note Card </h1>
+<h1> Notes </h1>
+<a href="{{ url_for('notes.create_note') }}" class="btn btn-success">Add Notes</a>
+                    
 <div class="row">
     {% for card in notes %}
     <div class="col-sm-6">
@@ -11,14 +13,12 @@
                     <li>{{ card.content }}</li>
                
                 </ul>
-                <a href="{{ url_for('notes.create_note') }}" class="btn btn-success">Add Notes</a>
-                    
+                
                 <form action="{{ url_for('notes.delete_note') }}" method="GET">
                     <input type="hidden" name="notes_id" value="{{ card.notes_id }}">
-                    <button type="submit" class="btn btn-danger">Delete Note</button>
+                    <button type="submit" class="btn btn-danger">Delete</button>
                 </form>
-                <a href="{{ url_for('notes.create_note') }}" class="btn btn-primary">Edit Note</a>
-                <a href="{{ url_for('notes.create_note') }}" class="btn btn-primary">Configure Note</a>
+                <a href="{{ url_for('notes.create_note') }}" class="btn btn-primary">View</a>
             </div>
         </div>
     </div>
@@ -31,5 +31,25 @@
     .card-body{
         padding-bottom: 3px;
     }
+    .container{
+        border-radius: 25px;
+        border: 2px solid #73AD21;
+    }
+        .nav-link{
+            color: black;
+            font-size: large;
+        }
+        ul {
+            list-style-type: none; /* Removes the default bullets */
+            padding: 0;
+            margin: 0;
+        }
+        
+        ul li {
+            padding: 5px 0; /* Adjusts the spacing between items */
+        }
+        html{
+            margin-bottom: 150px;
+        }
 </style>
 {% endblock %}
