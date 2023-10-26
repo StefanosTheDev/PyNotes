@@ -55,4 +55,4 @@ def delete_note():
         flash(f"{e}", 'danger')
         return render_template('Note/Notes.html', form=form)
     
-    return render_template('Notes/DeleteNote.html', form=form)
+    return render_template('Notes/DeleteNote.html', form=form, note_id=note_id)

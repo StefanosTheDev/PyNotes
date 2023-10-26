@@ -287,3 +287,35 @@
 2023-10-18 07:51:28,366 - INFO -  * Restarting with watchdog (windowsapi)
 2023-10-18 07:51:29,756 - WARNING -  * Debugger is active!
 2023-10-18 07:51:29,756 - INFO -  * Debugger PIN: 139-890-081
+2023-10-25 18:15:28,231 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.228:5000
+2023-10-25 18:15:28,231 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-25 18:15:28,239 - INFO -  * Restarting with stat
+2023-10-25 18:15:28,951 - WARNING -  * Debugger is active!
+2023-10-25 18:15:28,959 - INFO -  * Debugger PIN: 136-774-496
+2023-10-25 18:15:33,010 - INFO -  * Detected change in 'c:\\Users\\det9\\Desktop\\Research Projects\\PyNotes\\app.py', reloading
+2023-10-25 18:15:33,098 - INFO -  * Restarting with stat
+2023-10-25 18:15:36,285 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.228:5000
+2023-10-25 18:15:36,285 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-25 18:16:47,233 - INFO - 192.168.0.228 - - [25/Oct/2023 18:16:47] "GET / HTTP/1.1" 200 -
+2023-10-25 18:16:47,329 - INFO - 192.168.0.228 - - [25/Oct/2023 18:16:47] "GET /static/js/vanta.globe.min.js HTTP/1.1" 200 -
+2023-10-25 18:16:47,369 - INFO - 192.168.0.228 - - [25/Oct/2023 18:16:47] "GET /static/js/three.r134.min.js HTTP/1.1" 200 -
+2023-10-25 18:16:47,664 - INFO - 192.168.0.228 - - [25/Oct/2023 18:16:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-10-25 18:17:29,990 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.228:8080
+2023-10-25 18:17:29,990 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-25 18:17:41,975 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.228:8080
+2023-10-25 18:17:41,975 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-25 18:17:41,975 - INFO -  * Restarting with stat
+2023-10-25 18:17:42,707 - WARNING -  * Debugger is active!
+2023-10-25 18:17:42,715 - INFO -  * Debugger PIN: 136-774-496

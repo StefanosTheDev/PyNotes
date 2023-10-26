@@ -56,7 +56,7 @@ def register_user():
         print(f"Unexpected error: {str(e)}")  
         flash("An unexpected error occurred. Please try again later.", "danger")
         return render_template('Home/register.html', form=form)
-
+    print('Hello World')
     return render_template('Home/register.html', form=form)
 
 @user_blueprint.route('/user/delete/<int:id>', methods=['DELETE'])
