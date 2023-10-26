@@ -29,14 +29,14 @@
                     {% endwith %}
 
                     <!-- Registration form using Flask-WTF and Jinja2 -->
-                    <form action="{{ url_for('notes.delete_note') }}" method="post">
+                    <form action="{{ url_for('notes.delete_note') }}" method="POST">
                         {{ form.hidden_tag() }}
                         <div class="form-group">
-                      
-                            {{ form.delete(class="btn btn-warning") }}
-                            {{ form.cancel(class="btn btn-danger") }}
+                            <button type="submit" name="action" value="delete" class="btn btn-warning">Delete</button>
+                            <button type="submit" name="action" value="cancel" class="btn btn-danger">Cancel</button>
                         </div>
                     </form>
+                    
                     
                 </div>
             </div>

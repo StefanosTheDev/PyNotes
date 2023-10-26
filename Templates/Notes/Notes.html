@@ -6,14 +6,14 @@
     <div class="col-sm-6">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Card ID Number {{ note_id }}</h5>
+                <h5 class="card-title">Card ID Number {{ card.notes_id }}</h5>
                 <ul>
                     <li>{{ card.content }}</li>
                
                 </ul>
                 <a href="{{ url_for('notes.create_note') }}" class="btn btn-success">Add Notes</a>
                     
-                <form action="{{ url_for('notes.delete_note') }}" method="post">
+                <form action="{{ url_for('notes.delete_note') }}" method="GET">
                     <input type="hidden" name="notes_id" value="{{ card.notes_id }}">
                     <button type="submit" class="btn btn-danger">Delete Note</button>
                 </form>

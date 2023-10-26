@@ -3,6 +3,7 @@ from Models.NotesModel import NotesModel
 from Models.UserModel import UserModel
 from flask import jsonify, session 
 from Database.db import db
+from GlobalExceptions.ServiceException import UsernameError, PasswordError, ServiceException
 from sqlalchemy.exc import IntegrityError, OperationalError
 import warnings
 
@@ -37,5 +38,29 @@ class NotesService:
         except Exception as e:
             logging.error(e)
             raise
-    def delete_note():
-        pass
+    def delete_note(notes_id):
+        try: 
+            note_object = NotesService.return_note_by_Id(notes_id)
+            if note_object:
+                db.session.delete(note_object)
+                db.session.commit()
+                return True
+        except ServiceException as e:
+            logging.error(e)
+            db.session.rollback()
+            raise
+
+
+    def return_note_by_Id(notes_id):
+        try:
+            note_object = NotesModel.query.get(notes_id)
+            if not note_object:
+                raise ServiceException(f"No Note found with the id {notes_id}")
+            return note_object
+        except IntegrityError as e:
+            raise ServiceException(f"Error Message: {e}")
+        except OperationalError as e:  # catch any SQLAlchemy related errors
+            raise ServiceException(f"Database Error: {e}")
+            
+
+        

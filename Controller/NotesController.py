@@ -36,23 +36,29 @@ def get_notes():
     notes = NotesService.get_notes()
     return render_template('Notes/Notes.html', notes=notes)
 
+
 @note_blueprint.route('/notes/delete/note', methods=['GET', 'POST'])
 def delete_note():
     form = DeleteForm()
     try:
-        note_id = request.form.get('notes_id') ## how to get note from the form.
-        clicked_button = request.form.get('delete')
-        print(note_id)
-        if clicked_button == 'delete':
-            print(note_id)
-            print('Delete was clicked')
-            pass
-        elif clicked_button == 'cancel':
-            ## perform cancelation features
-            pass
-        
+        if request.method == 'POST':
+            note_id = session.get('current_note_id')  # Retrieve the note_id from the session.
+            clicked_button = request.form.get('action')  # Get the value of the clicked button.
+
+            if clicked_button == 'delete':
+                if note_id is not None:
+                    NotesService.delete_note(note_id)
+                    flash(f"Note Deleted Successfully: {note_id}", 'success')
+                    session.pop('current_note_id', None)  # Remove the note_id from the session after processing.
+                    return redirect(url_for('notes.get_notes'))
+                else:
+                    flash("Note ID not found.", 'danger')
+            elif clicked_button == 'cancel':
+                flash("Note deletion canceled.", 'info')
+        elif request.method == 'GET':
+                note_id = request.args.get('notes_id')
+                session['current_note_id'] = note_id
     except Exception as e:
-        flash(f"{e}", 'danger')
-        return render_template('Note/Notes.html', form=form)
+        flash(f"Error: {e}", 'danger')
     
-    return render_template('Notes/DeleteNote.html', form=form, note_id=note_id)
+    return render_template('Notes/DeleteNote.html', form=form, note_id=session.get('current_note_id'))
